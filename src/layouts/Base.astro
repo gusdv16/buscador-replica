@@ -1,0 +1,65 @@
+---
+import '../styles/global.css';
+const { titulo = 'Chiripa · Ofertas de tiendas', descripcion = 'Chiripa es un sitio de demostración: un buscador de ofertas de tiendas ficticias, hecho con Astro.' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={descripcion} />
+    <meta name="theme-color" content="#0b6e5f" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <title>{titulo}</title>
+  </head>
+  <body>
+    <div class="aviso">Sitio de demostración con tiendas y ofertas ficticias. Sin relación con ningún banco ni comercio real. <a href={`${base}acerca/`}>Más info</a></div>
+    <header class="cabecera">
+      <div class="contenedor">
+        <a class="logo" href={base} aria-label="Chiripa, inicio">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M6 4h16l14 14-16 16L4 20z" fill="#ff6b35" />
+            <circle cx="13" cy="12" r="3" fill="#fff9f2" />
+            <path d="M18 24l10-10" stroke="#0b6e5f" stroke-width="3.2" stroke-linecap="round" />
+            <circle cx="19" cy="15" r="2.2" fill="#0b6e5f" /><circle cx="27" cy="23" r="2.2" fill="#0b6e5f" />
+          </svg>
+          Chiripa
+        </a>
+        <form class="buscador-cabecera" action={`${base}ofertas/`} method="get" role="search">
+          <label class="solo-lectores" for="q-cab">Buscar ofertas</label>
+          <input id="q-cab" type="search" name="q" placeholder="¿Qué oferta buscás?" autocomplete="off" />
+          <button type="submit">Buscar</button>
+        </form>
+        <nav class="nav" aria-label="Principal">
+          <a href={`${base}ofertas/`}>Todas las ofertas</a>
+          <a href={`${base}#como-funciona`}>Cómo funciona</a>
+          <a href={`${base}acerca/`}>Acerca</a>
+        </nav>
+      </div>
+    </header>
+    <main><slot /></main>
+    <footer class="pie">
+      <div class="contenedor">
+        <div class="cols">
+          <div>
+            <a class="logo" href={base}>Chiripa</a>
+            <p>Un buscador de ofertas de tiendas de barrio. Proyecto de demostración: las tiendas, los códigos y las zonas son inventados.</p>
+          </div>
+          <div>
+            <h2>Explorar</h2>
+            <a href={`${base}ofertas/`}>Todas las ofertas</a>
+            <a href={`${base}ofertas/?cat=gastronomia`}>Gastronomía</a>
+            <a href={`${base}ofertas/?cat=moda`}>Moda</a>
+          </div>
+          <div>
+            <h2>Proyecto</h2>
+            <a href={`${base}acerca/`}>Acerca de este sitio</a>
+            <a href={`${base}#como-funciona`}>Cómo funciona</a>
+          </div>
+        </div>
+        <p class="legal">Ejercicio de réplica de estructura y experiencia de usuario. No es un sitio financiero, no solicita datos personales ni de pago y no tiene afiliación con ningún banco.</p>
+      </div>
+    </footer>
+  </body>
+</html>

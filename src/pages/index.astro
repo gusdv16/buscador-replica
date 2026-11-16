@@ -1,0 +1,97 @@
+---
+import Base from '../layouts/Base.astro';
+import Tarjeta from '../components/Tarjeta.astro';
+import datos from '../data/ofertas.json';
+const base = import.meta.env.BASE_URL;
+const { categorias, zonas, ofertas } = datos;
+const dias = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
+const iconos = { moda: '👗', tecnologia: '🎧', hogar: '🛋️', gastronomia: '🍕', 'salud-belleza': '🌿', deportes: '🚲', libros: '📚', mascotas: '🐾', ocio: '🎲' };
+const cuenta = (id) => ofertas.filter((o) => o.categoria === id).length;
+const destacadas = ofertas.filter((o) => o.destacada).slice(0, 8);
+---
+<Base>
+  <section class="hero">
+    <div class="contenedor">
+      <span class="hero-etiqueta">Ofertas de tiendas de barrio</span>
+      <h1>Las mejores <span class="grande">chiripas</span> cerca tuyo</h1>
+      <p>Descuentos y 2x1 de tiendas, cafés y talleres de tu zona. Buscá, elegí y mostrá el código en caja.</p>
+    </div>
+  </section>
+
+  <div class="contenedor">
+    <form class="tarjeta-busqueda" action={`${base}ofertas/`} method="get">
+      <h2>¡Encontrá la oferta que buscás!</h2>
+      <div class="campos">
+        <div class="campo">
+          <label for="q">Qué buscás</label>
+          <input id="q" name="q" type="search" placeholder="Pizza, zapatillas, bicicleta…" autocomplete="off" />
+        </div>
+        <div class="campo">
+          <label for="cat">Categoría</label>
+          <select id="cat" name="cat">
+            <option value="">Todas</option>
+            {categorias.map((c) => <option value={c.id}>{c.nombre}</option>)}
+          </select>
+        </div>
+        <div class="campo">
+          <label for="zona">Zona</label>
+          <select id="zona" name="zona">
+            <option value="">Todas</option>
+            {zonas.map((z) => <option value={z}>{z}</option>)}
+          </select>
+        </div>
+        <div class="campo">
+          <label for="dia">Día</label>
+          <select id="dia" name="dia">
+            <option value="">Cualquiera</option>
+            {dias.map((d) => <option value={d}>{d.charAt(0).toUpperCase() + d.slice(1)}</option>)}
+          </select>
+        </div>
+        <button class="boton" type="submit">Buscar</button>
+      </div>
+    </form>
+  </div>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <h2 class="titulo-seccion titulo-centro">Ofertas de tiendas para todos los gustos</h2>
+      <p class="subtitulo">Elegí una categoría y mirá qué hay en tu zona.</p>
+      <div class="categorias">
+        {categorias.map((c) => (
+          <a class={`categoria`} href={`${base}ofertas/?cat=${c.id}`}>
+            <span class={`icono t-${c.id}`} aria-hidden="true">{iconos[c.id]}</span>
+            {c.nombre}
+            <small>{cuenta(c.id)} ofertas</small>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" style="padding-top:0">
+    <div class="contenedor">
+      <div class="banners">
+        <a class="banner a" href={`${base}ofertas/?orden=mayor`}><strong>Hasta 40%</strong><span>Las ofertas con mayor descuento, ordenadas para vos</span></a>
+        <a class="banner b" href={`${base}ofertas/?q=2x1`}><strong>2x1</strong><span>Comé, mirá y jugá de a dos pagando uno</span></a>
+      </div>
+      <h2 class="titulo-seccion">Ofertas destacadas</h2>
+      <p class="subtitulo">Una selección de las chiripas de la semana.</p>
+      <div class="grilla">
+        {destacadas.map((o) => <Tarjeta o={o} />)}
+      </div>
+      <a class="boton boton-verde ver-mas" style="width:fit-content" href={`${base}ofertas/`}>Ver las {ofertas.length} ofertas</a>
+    </div>
+  </section>
+
+  <section class="seccion seccion-gris" id="como-funciona">
+    <div class="contenedor">
+      <h2 class="titulo-seccion titulo-centro">Cómo funciona</h2>
+      <p class="subtitulo">Tres pasos y listo. Sin registro y sin datos personales.</p>
+      <div class="pasos">
+        <div class="paso"><h3>Buscá</h3><p>Escribí lo que querés o filtrá por categoría, zona y día de la semana.</p></div>
+        <div class="paso"><h3>Elegí</h3><p>Abrí la ficha de la oferta y revisá condiciones, días y vigencia.</p></div>
+        <div class="paso"><h3>Mostrá el código</h3><p>Dalo en caja o ingresalo al comprar online. Así de simple.</p></div>
+      </div>
+    </div>
+  </section>
+</Base>

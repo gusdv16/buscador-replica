@@ -1,0 +1,64 @@
+---
+import Base from '../../layouts/Base.astro';
+import Tarjeta from '../../components/Tarjeta.astro';
+import datos from '../../data/ofertas.json';
+
+export function getStaticPaths() {
+  return datos.ofertas.map((o) => ({ params: { slug: o.slug }, props: { o } }));
+}
+const { o } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const iniciales = o.nombre.replace(/[^\p{L}\s]/gu, '').split(/\s+/).filter(Boolean).slice(0, 2).map((p) => p[0]).join('').toUpperCase();
+const codigo = 'CHIRIPA-' + o.slug.replace(/[^a-z]/g, '').slice(0, 4).toUpperCase() + o.dto;
+const vence = new Date(o.vigencia + 'T12:00:00').toLocaleDateString('es', { day: '2-digit', month: '2-digit', year: 'numeric' });
+const relacionadas = [
+  ...datos.ofertas.filter((x) => x.categoria === o.categoria && x.slug !== o.slug),
+  ...datos.ofertas.filter((x) => x.categoria !== o.categoria),
+].slice(0, 4);
+---
+<Base titulo={`${o.nombre} · ${o.etiqueta} · Chiripa`} descripcion={o.detalle}>
+  <div class="hero-detalle" aria-hidden="true"></div>
+  <div class="contenedor">
+    <nav class="migas" aria-label="Migas de pan"><a href={base}>Inicio</a> &gt; <a href={`${base}ofertas/`}>Ofertas</a> &gt; <span aria-current="page">{o.nombre}</span></nav>
+    <div class="ficha">
+      <div class={`monograma grande t-${o.categoria}`} aria-hidden="true">{iniciales}</div>
+      <div>
+        <h1>{o.nombre}</h1>
+        <div class="gran-dto">{o.tipo === '2x1' ? '2x1' : <>{o.dto}<small>% DTO</small></>}</div>
+        <p style="margin:6px 0">{o.descripcion}</p>
+        <div class="vigencia">Vigencia: {vence}</div>
+        <span class="codigo">Código: {codigo}</span>
+      </div>
+    </div>
+
+    <div class="detalle-cuerpo">
+      <div class="pila">
+        <section class="bloque">
+          <h2>Detalle de la oferta</h2>
+          <p style="margin:0;color:var(--tinta-suave)">{o.detalle}</p>
+        </section>
+        <section class="bloque">
+          <h2>Condiciones</h2>
+          <ul>{o.condiciones.map((c) => <li>{c}</li>)}</ul>
+        </section>
+      </div>
+      <div class="pila">
+        <section class="bloque">
+          <h2>Dónde</h2>
+          <ul class="etiquetas">{o.zonas.map((z) => <li>{z}</li>)}</ul>
+        </section>
+        <section class="bloque">
+          <h2>Cuándo</h2>
+          <p style="margin:0;color:var(--tinta-suave)">{o.diasTexto}</p>
+        </section>
+        <a class="boton boton-claro" href={`${base}ofertas/?cat=${o.categoria}`}>Más ofertas de {o.categoriaNombre}</a>
+      </div>
+    </div>
+
+    <section class="seccion" style="padding-bottom:24px">
+      <h2 class="titulo-seccion">También te puede interesar</h2>
+      <p class="subtitulo">Otras ofertas que podrían gustarte.</p>
+      <div class="grilla">{relacionadas.map((x) => <Tarjeta o={x} />)}</div>
+    </section>
+  </div>
+</Base>

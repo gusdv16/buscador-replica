@@ -1,0 +1,47 @@
+{
+  "fecha": "2026-11-16",
+  "corridas": 3,
+  "perfil": "móvil (por defecto de Lighthouse)",
+  "resultados": {
+    "inicio": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "buenasPracticas": 100,
+      "seo": 100,
+      "fcp": 1162,
+      "lcp": 1162,
+      "tbt": 15,
+      "cls": 0
+    },
+    "listado": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "buenasPracticas": 100,
+      "seo": 100,
+      "fcp": 1271,
+      "lcp": 1271,
+      "tbt": 1,
+      "cls": 0
+    },
+    "listado-filtrado": {
+      "rendimiento": 98,
+      "accesibilidad": 100,
+      "buenasPracticas": 100,
+      "seo": 100,
+      "fcp": 1232,
+      "lcp": 1232,
+      "tbt": 175,
+      "cls": 0
+    },
+    "detalle": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "buenasPracticas": 100,
+      "seo": 100,
+      "fcp": 1017,
+      "lcp": 1017,
+      "tbt": 6,
+      "cls": 0
+    }
+  }
+}

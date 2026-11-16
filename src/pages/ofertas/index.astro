@@ -1,0 +1,182 @@
+---
+import Base from '../../layouts/Base.astro';
+import Tarjeta from '../../components/Tarjeta.astro';
+import datos from '../../data/ofertas.json';
+const base = import.meta.env.BASE_URL;
+const { categorias, zonas, ofertas } = datos;
+const dias = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
+const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+const nCat = (id) => ofertas.filter((o) => o.categoria === id).length;
+const nZona = (z) => ofertas.filter((o) => o.zonas.includes(z)).length;
+---
+<Base titulo="Todas las ofertas · Chiripa" descripcion="Buscá ofertas de tiendas ficticias por texto, categoría, zona y día. Demostración hecha con Astro.">
+  <div class="contenedor">
+    <nav class="migas" aria-label="Migas de pan"><a href={base}>Inicio</a> &gt; <span aria-current="page">Ofertas</span></nav>
+    <div class="listado-cab">
+      <h1>Ofertas</h1>
+      <div class="ordenar">
+        <label for="orden">Ordenar por</label>
+        <select id="orden">
+          <option value="rel">Destacadas</option>
+          <option value="mayor">Mayor descuento ⇣</option>
+          <option value="menor">Menor descuento ⇡</option>
+          <option value="vence">Vencen primero</option>
+          <option value="az">Nombre A–Z</option>
+        </select>
+      </div>
+    </div>
+
+    <form class="campos" id="form-texto" style="grid-template-columns:1fr auto;margin-bottom:18px" role="search" onsubmit="return false">
+      <div class="campo">
+        <label class="solo-lectores" for="q">Buscar por texto</label>
+        <input id="q" type="search" placeholder="Buscá por tienda, producto o zona…" autocomplete="off" />
+      </div>
+    </form>
+
+    <button class="boton boton-claro boton-filtros" id="abrir-filtros" type="button" aria-expanded="false" aria-controls="filtros">Filtros</button>
+
+    <div class="listado">
+      <aside class="filtros" id="filtros" aria-label="Filtros">
+        <details open>
+          <summary>Categoría</summary>
+          {categorias.map((c) => (
+            <label class="opcion"><input type="checkbox" name="cat" value={c.id} />{c.nombre}<span class="n">{nCat(c.id)}</span></label>
+          ))}
+        </details>
+        <details open>
+          <summary>Zona</summary>
+          {zonas.map((z) => (
+            <label class="opcion"><input type="checkbox" name="zona" value={z} />{z}<span class="n">{nZona(z)}</span></label>
+          ))}
+        </details>
+        <details>
+          <summary>Día de la semana</summary>
+          {dias.map((d) => (
+            <label class="opcion"><input type="checkbox" name="dia" value={d} />{cap(d)}</label>
+          ))}
+        </details>
+        <button class="limpiar" id="limpiar" type="button">Limpiar filtros</button>
+      </aside>
+
+      <section aria-label="Resultados">
+        <h2 class="solo-lectores">Resultados</h2>
+        <div class="resumen" id="resumen"><span class="cuenta" id="cuenta" aria-live="polite">{ofertas.length} ofertas</span></div>
+        <div class="grilla" id="grilla">
+          {ofertas.map((o, i) => <Tarjeta o={o} i={i} />)}
+        </div>
+        <div class="vacio" id="vacio" hidden>
+          <h2>No encontramos ofertas</h2>
+          <p>Probá con otra palabra o quitá algún filtro.</p>
+          <button class="boton boton-verde" type="button" id="limpiar-todo">Ver todas las ofertas</button>
+        </div>
+        <button class="boton boton-claro ver-mas" id="ver-mas" type="button" hidden>Ver más ofertas</button>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<script>
+  // Búsqueda y filtros del lado del cliente. El estado vive en la URL (?q=&cat=&zona=&dia=&orden=).
+  const POR_PAGINA = 12;
+  const grilla = document.getElementById('grilla');
+  const tarjetas = Array.from(grilla.querySelectorAll('.tarjeta'));
+  const $q = document.getElementById('q');
+  const $orden = document.getElementById('orden');
+  const $cuenta = document.getElementById('cuenta');
+  const $resumen = document.getElementById('resumen');
+  const $vacio = document.getElementById('vacio');
+  const $verMas = document.getElementById('ver-mas');
+  const $filtros = document.getElementById('filtros');
+  const checks = Array.from($filtros.querySelectorAll('input[type=checkbox]'));
+  const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const nombreFiltro = (c) => c.nextSibling.textContent;
+
+  tarjetas.forEach((t) => (t.dataset.busq = norm(t.dataset.texto)));
+  let mostrar = POR_PAGINA;
+
+  const leerUrl = () => {
+    const p = new URLSearchParams(location.search);
+    $q.value = p.get('q') || '';
+    $orden.value = p.get('orden') || 'rel';
+    for (const c of checks) c.checked = (p.get(c.name) || '').split(',').includes(c.value);
+  };
+
+  const escribirUrl = () => {
+    const p = new URLSearchParams();
+    if ($q.value.trim()) p.set('q', $q.value.trim());
+    for (const n of ['cat', 'zona', 'dia']) {
+      const v = checks.filter((c) => c.name === n && c.checked).map((c) => c.value);
+      if (v.length) p.set(n, v.join(','));
+    }
+    if ($orden.value !== 'rel') p.set('orden', $orden.value);
+    const s = p.toString();
+    history.replaceState(null, '', s ? `?${s}` : location.pathname);
+  };
+
+  const orden = {
+    rel: (a, b) => a.dataset.i - b.dataset.i,
+    mayor: (a, b) => b.dataset.dto - a.dataset.dto || a.dataset.i - b.dataset.i,
+    menor: (a, b) => a.dataset.dto - b.dataset.dto || a.dataset.i - b.dataset.i,
+    vence: (a, b) => a.dataset.vence.localeCompare(b.dataset.vence) || a.dataset.i - b.dataset.i,
+    az: (a, b) => a.dataset.nombre.localeCompare(b.dataset.nombre, 'es'),
+  };
+
+  const seleccion = (n) => checks.filter((c) => c.name === n && c.checked).map((c) => c.value);
+
+  function aplicar(reiniciar) {
+    if (reiniciar) mostrar = POR_PAGINA;
+    const palabras = norm($q.value).split(/\s+/).filter(Boolean);
+    const cats = seleccion('cat'), zs = seleccion('zona'), ds = seleccion('dia');
+
+    const visibles = tarjetas.filter((t) => {
+      if (!palabras.every((w) => t.dataset.busq.includes(w))) return false;
+      if (cats.length && !cats.includes(t.dataset.cat)) return false;
+      if (zs.length && !t.dataset.zonas.split('|').some((z) => zs.includes(z))) return false;
+      if (ds.length) {
+        const d = t.dataset.dias.split('|');
+        if (!d.includes('todos') && !d.some((x) => ds.includes(x))) return false;
+      }
+      return true;
+    }).sort(orden[$orden.value] || orden.rel);
+
+    const frag = document.createDocumentFragment();
+    tarjetas.forEach((t) => (t.hidden = true));
+    visibles.forEach((t, i) => { t.hidden = i >= mostrar; frag.appendChild(t); });
+    tarjetas.filter((t) => !visibles.includes(t)).forEach((t) => frag.appendChild(t));
+    grilla.appendChild(frag);
+
+    $cuenta.textContent = `${visibles.length} ${visibles.length === 1 ? 'oferta' : 'ofertas'}`;
+    $vacio.hidden = visibles.length > 0;
+    grilla.hidden = visibles.length === 0;
+    $verMas.hidden = visibles.length <= mostrar;
+
+    $resumen.querySelectorAll('.chip').forEach((c) => c.remove());
+    const activos = [];
+    if ($q.value.trim()) activos.push(['Texto: ' + $q.value.trim(), () => { $q.value = ''; }]);
+    checks.filter((c) => c.checked).forEach((c) => activos.push([nombreFiltro(c), () => { c.checked = false; }]));
+    activos.forEach(([txt, quitar]) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'chip'; b.textContent = txt;
+      b.setAttribute('aria-label', `Quitar filtro ${txt}`);
+      b.addEventListener('click', () => { quitar(); aplicar(true); });
+      $resumen.appendChild(b);
+    });
+    escribirUrl();
+  }
+
+  const limpiar = () => { $q.value = ''; checks.forEach((c) => (c.checked = false)); aplicar(true); };
+  $q.addEventListener('input', () => aplicar(true));
+  $orden.addEventListener('change', () => aplicar(true));
+  checks.forEach((c) => c.addEventListener('change', () => aplicar(true)));
+  document.getElementById('limpiar').addEventListener('click', limpiar);
+  document.getElementById('limpiar-todo').addEventListener('click', limpiar);
+  $verMas.addEventListener('click', () => { mostrar += POR_PAGINA; aplicar(false); });
+  const $abrir = document.getElementById('abrir-filtros');
+  $abrir.addEventListener('click', () => {
+    const abierto = $filtros.classList.toggle('abierto');
+    $abrir.setAttribute('aria-expanded', abierto);
+  });
+
+  leerUrl();
+  aplicar(true);
+</script>

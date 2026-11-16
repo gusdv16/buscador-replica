@@ -1,0 +1,1404 @@
+{
+ "categorias": [
+  {
+   "id": "moda",
+   "nombre": "Moda"
+  },
+  {
+   "id": "tecnologia",
+   "nombre": "Tecnología"
+  },
+  {
+   "id": "hogar",
+   "nombre": "Hogar"
+  },
+  {
+   "id": "gastronomia",
+   "nombre": "Gastronomía"
+  },
+  {
+   "id": "salud-belleza",
+   "nombre": "Salud y belleza"
+  },
+  {
+   "id": "deportes",
+   "nombre": "Deportes"
+  },
+  {
+   "id": "libros",
+   "nombre": "Libros y papelería"
+  },
+  {
+   "id": "mascotas",
+   "nombre": "Mascotas"
+  },
+  {
+   "id": "ocio",
+   "nombre": "Ocio y juegos"
+  }
+ ],
+ "zonas": [
+  "Centro",
+  "Costa",
+  "Norte",
+  "Sur",
+  "Oeste",
+  "Online"
+ ],
+ "ofertas": [
+  {
+   "slug": "hilo-y-aguja",
+   "nombre": "Hilo & Aguja",
+   "categoria": "moda",
+   "categoriaNombre": "Moda",
+   "zonas": [
+    "Centro",
+    "Norte"
+   ],
+   "dias": [
+    "lunes",
+    "martes",
+    "miércoles"
+   ],
+   "diasTexto": "Lunes, martes, miércoles",
+   "tipo": "%",
+   "dto": 25,
+   "etiqueta": "25%",
+   "descripcion": "Ropa de temporada con descuento los primeros días de la semana.",
+   "detalle": "25% de descuento en Hilo & Aguja: lunes, martes, miércoles. Ropa de temporada con descuento los primeros días de la semana.",
+   "condiciones": [
+    "Válido: lunes, martes, miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": true
+  },
+  {
+   "slug": "zapateria-los-pinos",
+   "nombre": "Zapatería Los Pinos",
+   "categoria": "moda",
+   "categoriaNombre": "Moda",
+   "zonas": [
+    "Centro",
+    "Sur",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 20,
+   "etiqueta": "20%",
+   "descripcion": "Calzado urbano y de vestir en toda la tienda.",
+   "detalle": "20% de descuento en Zapatería Los Pinos: todos los días. Calzado urbano y de vestir en toda la tienda.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": false
+  },
+  {
+   "slug": "mar-de-telas",
+   "nombre": "Mar de Telas",
+   "categoria": "moda",
+   "categoriaNombre": "Moda",
+   "zonas": [
+    "Costa"
+   ],
+   "dias": [
+    "martes",
+    "jueves"
+   ],
+   "diasTexto": "Martes, jueves",
+   "tipo": "%",
+   "dto": 15,
+   "etiqueta": "15%",
+   "descripcion": "Telas, mercería y accesorios para coser en casa.",
+   "detalle": "15% de descuento en Mar de Telas: martes, jueves. Telas, mercería y accesorios para coser en casa.",
+   "condiciones": [
+    "Válido: martes, jueves.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": false
+  },
+  {
+   "slug": "pasarela-9",
+   "nombre": "Pasarela 9",
+   "categoria": "moda",
+   "categoriaNombre": "Moda",
+   "zonas": [
+    "Centro",
+    "Costa"
+   ],
+   "dias": [
+    "viernes",
+    "sábado",
+    "domingo"
+   ],
+   "diasTexto": "Viernes, sábado, domingo",
+   "tipo": "%",
+   "dto": 30,
+   "etiqueta": "30%",
+   "descripcion": "Liquidación de colección pasada, fines de semana.",
+   "detalle": "30% de descuento en Pasarela 9: viernes, sábado, domingo. Liquidación de colección pasada, fines de semana.",
+   "condiciones": [
+    "Válido: viernes, sábado, domingo.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": false
+  },
+  {
+   "slug": "denim-norte",
+   "nombre": "Denim Norte",
+   "categoria": "moda",
+   "categoriaNombre": "Moda",
+   "zonas": [
+    "Norte",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 10,
+   "etiqueta": "10%",
+   "descripcion": "Jeans y camperas, envío gratis en compras online.",
+   "detalle": "10% de descuento en Denim Norte: todos los días. Jeans y camperas, envío gratis en compras online.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-12-31",
+   "destacada": false
+  },
+  {
+   "slug": "pequenos-pasos",
+   "nombre": "Pequeños Pasos",
+   "categoria": "moda",
+   "categoriaNombre": "Moda",
+   "zonas": [
+    "Oeste",
+    "Sur"
+   ],
+   "dias": [
+    "sábado",
+    "domingo"
+   ],
+   "diasTexto": "Sábado, domingo",
+   "tipo": "2x1",
+   "dto": 50,
+   "etiqueta": "2x1",
+   "descripcion": "Ropa infantil: llevás dos prendas y pagás una.",
+   "detalle": "Promoción 2x1 en Pequeños Pasos: sábado, domingo. Ropa infantil: llevás dos prendas y pagás una.",
+   "condiciones": [
+    "Válido: sábado, domingo.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": false
+  },
+  {
+   "slug": "maletas-del-sur",
+   "nombre": "Maletas del Sur",
+   "categoria": "moda",
+   "categoriaNombre": "Moda",
+   "zonas": [
+    "Sur",
+    "Online"
+   ],
+   "dias": [
+    "viernes",
+    "sábado",
+    "domingo"
+   ],
+   "diasTexto": "Viernes, sábado, domingo",
+   "tipo": "%",
+   "dto": 35,
+   "etiqueta": "35%",
+   "descripcion": "Valijas, mochilas y bolsos de viaje.",
+   "detalle": "35% de descuento en Maletas del Sur: viernes, sábado, domingo. Valijas, mochilas y bolsos de viaje.",
+   "condiciones": [
+    "Válido: viernes, sábado, domingo.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": true
+  },
+  {
+   "slug": "byte-taller",
+   "nombre": "Byte Taller",
+   "categoria": "tecnologia",
+   "categoriaNombre": "Tecnología",
+   "zonas": [
+    "Centro",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 15,
+   "etiqueta": "15%",
+   "descripcion": "Accesorios, cables y periféricos para tu escritorio.",
+   "detalle": "15% de descuento en Byte Taller: todos los días. Accesorios, cables y periféricos para tu escritorio.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": false
+  },
+  {
+   "slug": "pixel-casa",
+   "nombre": "Pixel Casa",
+   "categoria": "tecnologia",
+   "categoriaNombre": "Tecnología",
+   "zonas": [
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 10,
+   "etiqueta": "10%",
+   "descripcion": "Domótica y bombillas inteligentes con envío sin costo.",
+   "detalle": "10% de descuento en Pixel Casa: todos los días. Domótica y bombillas inteligentes con envío sin costo.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": false
+  },
+  {
+   "slug": "circuito-sur",
+   "nombre": "Circuito Sur",
+   "categoria": "tecnologia",
+   "categoriaNombre": "Tecnología",
+   "zonas": [
+    "Sur"
+   ],
+   "dias": [
+    "lunes",
+    "martes",
+    "miércoles"
+   ],
+   "diasTexto": "Lunes, martes, miércoles",
+   "tipo": "%",
+   "dto": 20,
+   "etiqueta": "20%",
+   "descripcion": "Reparación de celulares y cambio de pantallas.",
+   "detalle": "20% de descuento en Circuito Sur: lunes, martes, miércoles. Reparación de celulares y cambio de pantallas.",
+   "condiciones": [
+    "Válido: lunes, martes, miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-12-31",
+   "destacada": false
+  },
+  {
+   "slug": "onda-corta",
+   "nombre": "Onda Corta",
+   "categoria": "tecnologia",
+   "categoriaNombre": "Tecnología",
+   "zonas": [
+    "Centro",
+    "Costa",
+    "Norte"
+   ],
+   "dias": [
+    "martes",
+    "jueves"
+   ],
+   "diasTexto": "Martes, jueves",
+   "tipo": "%",
+   "dto": 12,
+   "etiqueta": "12%",
+   "descripcion": "Auriculares, parlantes y radios portátiles.",
+   "detalle": "12% de descuento en Onda Corta: martes, jueves. Auriculares, parlantes y radios portátiles.",
+   "condiciones": [
+    "Válido: martes, jueves.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": false
+  },
+  {
+   "slug": "nube-gadgets",
+   "nombre": "Nube Gadgets",
+   "categoria": "tecnologia",
+   "categoriaNombre": "Tecnología",
+   "zonas": [
+    "Online"
+   ],
+   "dias": [
+    "viernes",
+    "sábado",
+    "domingo"
+   ],
+   "diasTexto": "Viernes, sábado, domingo",
+   "tipo": "%",
+   "dto": 18,
+   "etiqueta": "18%",
+   "descripcion": "Gadgets de oficina y regalos tecnológicos.",
+   "detalle": "18% de descuento en Nube Gadgets: viernes, sábado, domingo. Gadgets de oficina y regalos tecnológicos.",
+   "condiciones": [
+    "Válido: viernes, sábado, domingo.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": false
+  },
+  {
+   "slug": "casa-tilo",
+   "nombre": "Casa Tilo",
+   "categoria": "hogar",
+   "categoriaNombre": "Hogar",
+   "zonas": [
+    "Centro",
+    "Oeste"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 20,
+   "etiqueta": "20%",
+   "descripcion": "Muebles de madera maciza hechos a pedido.",
+   "detalle": "20% de descuento en Casa Tilo: todos los días. Muebles de madera maciza hechos a pedido.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": true
+  },
+  {
+   "slug": "lamparas-del-faro",
+   "nombre": "Lámparas del Faro",
+   "categoria": "hogar",
+   "categoriaNombre": "Hogar",
+   "zonas": [
+    "Costa"
+   ],
+   "dias": [
+    "lunes",
+    "martes",
+    "miércoles"
+   ],
+   "diasTexto": "Lunes, martes, miércoles",
+   "tipo": "%",
+   "dto": 25,
+   "etiqueta": "25%",
+   "descripcion": "Iluminación decorativa para interior y jardín.",
+   "detalle": "25% de descuento en Lámparas del Faro: lunes, martes, miércoles. Iluminación decorativa para interior y jardín.",
+   "condiciones": [
+    "Válido: lunes, martes, miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": false
+  },
+  {
+   "slug": "ropa-blanca-aurora",
+   "nombre": "Ropa Blanca Aurora",
+   "categoria": "hogar",
+   "categoriaNombre": "Hogar",
+   "zonas": [
+    "Norte",
+    "Sur"
+   ],
+   "dias": [
+    "viernes",
+    "sábado",
+    "domingo"
+   ],
+   "diasTexto": "Viernes, sábado, domingo",
+   "tipo": "%",
+   "dto": 30,
+   "etiqueta": "30%",
+   "descripcion": "Sábanas, toallas y acolchados de algodón.",
+   "detalle": "30% de descuento en Ropa Blanca Aurora: viernes, sábado, domingo. Sábanas, toallas y acolchados de algodón.",
+   "condiciones": [
+    "Válido: viernes, sábado, domingo.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-12-31",
+   "destacada": false
+  },
+  {
+   "slug": "el-rincon-verde",
+   "nombre": "El Rincón Verde",
+   "categoria": "hogar",
+   "categoriaNombre": "Hogar",
+   "zonas": [
+    "Oeste",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 15,
+   "etiqueta": "15%",
+   "descripcion": "Plantas, macetas y herramientas de jardinería.",
+   "detalle": "15% de descuento en El Rincón Verde: todos los días. Plantas, macetas y herramientas de jardinería.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": false
+  },
+  {
+   "slug": "cocina-maestra",
+   "nombre": "Cocina Maestra",
+   "categoria": "hogar",
+   "categoriaNombre": "Hogar",
+   "zonas": [
+    "Centro"
+   ],
+   "dias": [
+    "miércoles"
+   ],
+   "diasTexto": "Miércoles",
+   "tipo": "2x1",
+   "dto": 50,
+   "etiqueta": "2x1",
+   "descripcion": "Utensilios de cocina: 2x1 en la línea básica.",
+   "detalle": "Promoción 2x1 en Cocina Maestra: miércoles. Utensilios de cocina: 2x1 en la línea básica.",
+   "condiciones": [
+    "Válido: miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": false
+  },
+  {
+   "slug": "floreria-petalo",
+   "nombre": "Florería Pétalo",
+   "categoria": "hogar",
+   "categoriaNombre": "Hogar",
+   "zonas": [
+    "Centro",
+    "Costa",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 10,
+   "etiqueta": "10%",
+   "descripcion": "Ramos, arreglos florales y suscripción mensual.",
+   "detalle": "10% de descuento en Florería Pétalo: todos los días. Ramos, arreglos florales y suscripción mensual.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": false
+  },
+  {
+   "slug": "pan-de-barrio",
+   "nombre": "Pan de Barrio",
+   "categoria": "gastronomia",
+   "categoriaNombre": "Gastronomía",
+   "zonas": [
+    "Centro",
+    "Norte",
+    "Sur"
+   ],
+   "dias": [
+    "martes",
+    "jueves"
+   ],
+   "diasTexto": "Martes, jueves",
+   "tipo": "%",
+   "dto": 20,
+   "etiqueta": "20%",
+   "descripcion": "Panadería artesanal, panes de masa madre y facturas.",
+   "detalle": "20% de descuento en Pan de Barrio: martes, jueves. Panadería artesanal, panes de masa madre y facturas.",
+   "condiciones": [
+    "Válido: martes, jueves.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": true
+  },
+  {
+   "slug": "heladeria-polo-sur",
+   "nombre": "Heladería Polo Sur",
+   "categoria": "gastronomia",
+   "categoriaNombre": "Gastronomía",
+   "zonas": [
+    "Costa",
+    "Sur"
+   ],
+   "dias": [
+    "jueves",
+    "viernes"
+   ],
+   "diasTexto": "Jueves, viernes",
+   "tipo": "2x1",
+   "dto": 50,
+   "etiqueta": "2x1",
+   "descripcion": "Helados artesanales en cucurucho o pote de medio kilo.",
+   "detalle": "Promoción 2x1 en Heladería Polo Sur: jueves, viernes. Helados artesanales en cucurucho o pote de medio kilo.",
+   "condiciones": [
+    "Válido: jueves, viernes.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-12-31",
+   "destacada": false
+  },
+  {
+   "slug": "tostadores-del-puerto",
+   "nombre": "Tostadores del Puerto",
+   "categoria": "gastronomia",
+   "categoriaNombre": "Gastronomía",
+   "zonas": [
+    "Costa",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 15,
+   "etiqueta": "15%",
+   "descripcion": "Café de especialidad en grano y molido.",
+   "detalle": "15% de descuento en Tostadores del Puerto: todos los días. Café de especialidad en grano y molido.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": false
+  },
+  {
+   "slug": "la-parrilla-de-ana",
+   "nombre": "La Parrilla de Ana",
+   "categoria": "gastronomia",
+   "categoriaNombre": "Gastronomía",
+   "zonas": [
+    "Oeste"
+   ],
+   "dias": [
+    "lunes",
+    "martes",
+    "miércoles"
+   ],
+   "diasTexto": "Lunes, martes, miércoles",
+   "tipo": "%",
+   "dto": 25,
+   "etiqueta": "25%",
+   "descripcion": "Parrilla completa para dos, almuerzos de lunes a miércoles.",
+   "detalle": "25% de descuento en La Parrilla de Ana: lunes, martes, miércoles. Parrilla completa para dos, almuerzos de lunes a miércoles.",
+   "condiciones": [
+    "Válido: lunes, martes, miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": false
+  },
+  {
+   "slug": "sushi-marea",
+   "nombre": "Sushi Marea",
+   "categoria": "gastronomia",
+   "categoriaNombre": "Gastronomía",
+   "zonas": [
+    "Centro",
+    "Costa"
+   ],
+   "dias": [
+    "martes"
+   ],
+   "diasTexto": "Martes",
+   "tipo": "%",
+   "dto": 30,
+   "etiqueta": "30%",
+   "descripcion": "Rolls y combinados para compartir.",
+   "detalle": "30% de descuento en Sushi Marea: martes. Rolls y combinados para compartir.",
+   "condiciones": [
+    "Válido: martes.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": false
+  },
+  {
+   "slug": "pizzeria-doce-lunas",
+   "nombre": "Pizzería Doce Lunas",
+   "categoria": "gastronomia",
+   "categoriaNombre": "Gastronomía",
+   "zonas": [
+    "Norte",
+    "Oeste"
+   ],
+   "dias": [
+    "miércoles",
+    "jueves"
+   ],
+   "diasTexto": "Miércoles, jueves",
+   "tipo": "2x1",
+   "dto": 50,
+   "etiqueta": "2x1",
+   "descripcion": "Pizzas medianas 2x1 comiendo en el local.",
+   "detalle": "Promoción 2x1 en Pizzería Doce Lunas: miércoles, jueves. Pizzas medianas 2x1 comiendo en el local.",
+   "condiciones": [
+    "Válido: miércoles, jueves.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": false
+  },
+  {
+   "slug": "dulce-gusto",
+   "nombre": "Dulce Gusto",
+   "categoria": "gastronomia",
+   "categoriaNombre": "Gastronomía",
+   "zonas": [
+    "Sur",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 12,
+   "etiqueta": "12%",
+   "descripcion": "Tortas, alfajores y cajas de regalo.",
+   "detalle": "12% de descuento en Dulce Gusto: todos los días. Tortas, alfajores y cajas de regalo.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-12-31",
+   "destacada": true
+  },
+  {
+   "slug": "botica-brisa",
+   "nombre": "Botica Brisa",
+   "categoria": "salud-belleza",
+   "categoriaNombre": "Salud y belleza",
+   "zonas": [
+    "Centro",
+    "Norte",
+    "Costa"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 15,
+   "etiqueta": "15%",
+   "descripcion": "Cosmética natural y cuidado de la piel.",
+   "detalle": "15% de descuento en Botica Brisa: todos los días. Cosmética natural y cuidado de la piel.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": false
+  },
+  {
+   "slug": "optica-mirador",
+   "nombre": "Óptica Mirador",
+   "categoria": "salud-belleza",
+   "categoriaNombre": "Salud y belleza",
+   "zonas": [
+    "Centro",
+    "Sur"
+   ],
+   "dias": [
+    "lunes",
+    "martes",
+    "miércoles"
+   ],
+   "diasTexto": "Lunes, martes, miércoles",
+   "tipo": "%",
+   "dto": 30,
+   "etiqueta": "30%",
+   "descripcion": "Armazones y lentes de sol, examen visual sin costo.",
+   "detalle": "30% de descuento en Óptica Mirador: lunes, martes, miércoles. Armazones y lentes de sol, examen visual sin costo.",
+   "condiciones": [
+    "Válido: lunes, martes, miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": false
+  },
+  {
+   "slug": "estudio-luma",
+   "nombre": "Estudio Luma",
+   "categoria": "salud-belleza",
+   "categoriaNombre": "Salud y belleza",
+   "zonas": [
+    "Costa"
+   ],
+   "dias": [
+    "martes",
+    "jueves"
+   ],
+   "diasTexto": "Martes, jueves",
+   "tipo": "%",
+   "dto": 20,
+   "etiqueta": "20%",
+   "descripcion": "Peluquería, color y tratamientos capilares.",
+   "detalle": "20% de descuento en Estudio Luma: martes, jueves. Peluquería, color y tratamientos capilares.",
+   "condiciones": [
+    "Válido: martes, jueves.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": false
+  },
+  {
+   "slug": "herbolario-raiz",
+   "nombre": "Herbolario Raíz",
+   "categoria": "salud-belleza",
+   "categoriaNombre": "Salud y belleza",
+   "zonas": [
+    "Oeste",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 10,
+   "etiqueta": "10%",
+   "descripcion": "Infusiones, suplementos y aceites esenciales.",
+   "detalle": "10% de descuento en Herbolario Raíz: todos los días. Infusiones, suplementos y aceites esenciales.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": false
+  },
+  {
+   "slug": "spa-quietud",
+   "nombre": "Spa Quietud",
+   "categoria": "salud-belleza",
+   "categoriaNombre": "Salud y belleza",
+   "zonas": [
+    "Norte"
+   ],
+   "dias": [
+    "viernes"
+   ],
+   "diasTexto": "Viernes",
+   "tipo": "%",
+   "dto": 25,
+   "etiqueta": "25%",
+   "descripcion": "Masajes y circuitos de relax de 90 minutos.",
+   "detalle": "25% de descuento en Spa Quietud: viernes. Masajes y circuitos de relax de 90 minutos.",
+   "condiciones": [
+    "Válido: viernes.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-12-31",
+   "destacada": false
+  },
+  {
+   "slug": "pedal-alto",
+   "nombre": "Pedal Alto",
+   "categoria": "deportes",
+   "categoriaNombre": "Deportes",
+   "zonas": [
+    "Costa",
+    "Sur"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 20,
+   "etiqueta": "20%",
+   "descripcion": "Bicicletas, cascos y service completo.",
+   "detalle": "20% de descuento en Pedal Alto: todos los días. Bicicletas, cascos y service completo.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": true
+  },
+  {
+   "slug": "cancha-5",
+   "nombre": "Cancha 5",
+   "categoria": "deportes",
+   "categoriaNombre": "Deportes",
+   "zonas": [
+    "Norte",
+    "Oeste"
+   ],
+   "dias": [
+    "lunes",
+    "martes",
+    "miércoles"
+   ],
+   "diasTexto": "Lunes, martes, miércoles",
+   "tipo": "%",
+   "dto": 15,
+   "etiqueta": "15%",
+   "descripcion": "Alquiler de canchas de fútbol 5 en horario de día.",
+   "detalle": "15% de descuento en Cancha 5: lunes, martes, miércoles. Alquiler de canchas de fútbol 5 en horario de día.",
+   "condiciones": [
+    "Válido: lunes, martes, miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": false
+  },
+  {
+   "slug": "trail-montana",
+   "nombre": "Trail Montaña",
+   "categoria": "deportes",
+   "categoriaNombre": "Deportes",
+   "zonas": [
+    "Online",
+    "Centro"
+   ],
+   "dias": [
+    "viernes",
+    "sábado",
+    "domingo"
+   ],
+   "diasTexto": "Viernes, sábado, domingo",
+   "tipo": "%",
+   "dto": 25,
+   "etiqueta": "25%",
+   "descripcion": "Calzado y mochilas para caminatas y trekking.",
+   "detalle": "25% de descuento en Trail Montaña: viernes, sábado, domingo. Calzado y mochilas para caminatas y trekking.",
+   "condiciones": [
+    "Válido: viernes, sábado, domingo.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": false
+  },
+  {
+   "slug": "remo-y-sal",
+   "nombre": "Remo y Sal",
+   "categoria": "deportes",
+   "categoriaNombre": "Deportes",
+   "zonas": [
+    "Costa"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 10,
+   "etiqueta": "10%",
+   "descripcion": "Clases de remo y alquiler de kayaks.",
+   "detalle": "10% de descuento en Remo y Sal: todos los días. Clases de remo y alquiler de kayaks.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": false
+  },
+  {
+   "slug": "gimnasio-cumbre",
+   "nombre": "Gimnasio Cumbre",
+   "categoria": "deportes",
+   "categoriaNombre": "Deportes",
+   "zonas": [
+    "Centro"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 40,
+   "etiqueta": "40%",
+   "descripcion": "Matrícula con descuento en el primer trimestre.",
+   "detalle": "40% de descuento en Gimnasio Cumbre: todos los días. Matrícula con descuento en el primer trimestre.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-12-31",
+   "destacada": false
+  },
+  {
+   "slug": "papel-y-tinta",
+   "nombre": "Papel y Tinta",
+   "categoria": "libros",
+   "categoriaNombre": "Libros y papelería",
+   "zonas": [
+    "Centro",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 20,
+   "etiqueta": "20%",
+   "descripcion": "Libros de narrativa y ensayo, ediciones de bolsillo.",
+   "detalle": "20% de descuento en Papel y Tinta: todos los días. Libros de narrativa y ensayo, ediciones de bolsillo.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": false
+  },
+  {
+   "slug": "cuaderno-abierto",
+   "nombre": "Cuaderno Abierto",
+   "categoria": "libros",
+   "categoriaNombre": "Libros y papelería",
+   "zonas": [
+    "Norte",
+    "Sur"
+   ],
+   "dias": [
+    "martes",
+    "jueves"
+   ],
+   "diasTexto": "Martes, jueves",
+   "tipo": "%",
+   "dto": 15,
+   "etiqueta": "15%",
+   "descripcion": "Cuadernos, agendas y útiles para la vuelta a clases.",
+   "detalle": "15% de descuento en Cuaderno Abierto: martes, jueves. Cuadernos, agendas y útiles para la vuelta a clases.",
+   "condiciones": [
+    "Válido: martes, jueves.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": true
+  },
+  {
+   "slug": "libreria-faro-viejo",
+   "nombre": "Librería Faro Viejo",
+   "categoria": "libros",
+   "categoriaNombre": "Libros y papelería",
+   "zonas": [
+    "Costa"
+   ],
+   "dias": [
+    "sábado"
+   ],
+   "diasTexto": "Sábado",
+   "tipo": "2x1",
+   "dto": 50,
+   "etiqueta": "2x1",
+   "descripcion": "Libros usados y de ocasión: llevá dos y pagá uno.",
+   "detalle": "Promoción 2x1 en Librería Faro Viejo: sábado. Libros usados y de ocasión: llevá dos y pagá uno.",
+   "condiciones": [
+    "Válido: sábado.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": false
+  },
+  {
+   "slug": "comiqueria-orbita",
+   "nombre": "Comiquería Órbita",
+   "categoria": "libros",
+   "categoriaNombre": "Libros y papelería",
+   "zonas": [
+    "Centro",
+    "Oeste",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 10,
+   "etiqueta": "10%",
+   "descripcion": "Historietas, mangas y novelas gráficas.",
+   "detalle": "10% de descuento en Comiquería Órbita: todos los días. Historietas, mangas y novelas gráficas.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": false
+  },
+  {
+   "slug": "huellas",
+   "nombre": "Huellas",
+   "categoria": "mascotas",
+   "categoriaNombre": "Mascotas",
+   "zonas": [
+    "Centro",
+    "Norte",
+    "Sur"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 15,
+   "etiqueta": "15%",
+   "descripcion": "Alimento balanceado y accesorios para perros y gatos.",
+   "detalle": "15% de descuento en Huellas: todos los días. Alimento balanceado y accesorios para perros y gatos.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-12-31",
+   "destacada": false
+  },
+  {
+   "slug": "veterinaria-patitas",
+   "nombre": "Veterinaria Patitas",
+   "categoria": "mascotas",
+   "categoriaNombre": "Mascotas",
+   "zonas": [
+    "Oeste"
+   ],
+   "dias": [
+    "lunes",
+    "martes",
+    "miércoles"
+   ],
+   "diasTexto": "Lunes, martes, miércoles",
+   "tipo": "%",
+   "dto": 20,
+   "etiqueta": "20%",
+   "descripcion": "Consultas, vacunas y desparasitación.",
+   "detalle": "20% de descuento en Veterinaria Patitas: lunes, martes, miércoles. Consultas, vacunas y desparasitación.",
+   "condiciones": [
+    "Válido: lunes, martes, miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": false
+  },
+  {
+   "slug": "peluqueria-canina-bigotes",
+   "nombre": "Peluquería Canina Bigotes",
+   "categoria": "mascotas",
+   "categoriaNombre": "Mascotas",
+   "zonas": [
+    "Costa",
+    "Sur"
+   ],
+   "dias": [
+    "martes",
+    "jueves"
+   ],
+   "diasTexto": "Martes, jueves",
+   "tipo": "%",
+   "dto": 25,
+   "etiqueta": "25%",
+   "descripcion": "Baño, corte y cepillado con turno previo.",
+   "detalle": "25% de descuento en Peluquería Canina Bigotes: martes, jueves. Baño, corte y cepillado con turno previo.",
+   "condiciones": [
+    "Válido: martes, jueves.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": false
+  },
+  {
+   "slug": "mundo-acuario",
+   "nombre": "Mundo Acuario",
+   "categoria": "mascotas",
+   "categoriaNombre": "Mascotas",
+   "zonas": [
+    "Norte",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 10,
+   "etiqueta": "10%",
+   "descripcion": "Peceras, filtros y alimento para peces.",
+   "detalle": "10% de descuento en Mundo Acuario: todos los días. Peceras, filtros y alimento para peces.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": true
+  },
+  {
+   "slug": "cine-club-esquina",
+   "nombre": "Cine Club Esquina",
+   "categoria": "ocio",
+   "categoriaNombre": "Ocio y juegos",
+   "zonas": [
+    "Centro"
+   ],
+   "dias": [
+    "martes",
+    "miércoles"
+   ],
+   "diasTexto": "Martes, miércoles",
+   "tipo": "2x1",
+   "dto": 50,
+   "etiqueta": "2x1",
+   "descripcion": "Entradas 2x1 a funciones de cine independiente.",
+   "detalle": "Promoción 2x1 en Cine Club Esquina: martes, miércoles. Entradas 2x1 a funciones de cine independiente.",
+   "condiciones": [
+    "Válido: martes, miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": false
+  },
+  {
+   "slug": "mesa-de-juegos",
+   "nombre": "Mesa de Juegos",
+   "categoria": "ocio",
+   "categoriaNombre": "Ocio y juegos",
+   "zonas": [
+    "Norte",
+    "Online"
+   ],
+   "dias": [
+    "todos"
+   ],
+   "diasTexto": "Todos los días",
+   "tipo": "%",
+   "dto": 20,
+   "etiqueta": "20%",
+   "descripcion": "Juegos de mesa y rompecabezas para toda la familia.",
+   "detalle": "20% de descuento en Mesa de Juegos: todos los días. Juegos de mesa y rompecabezas para toda la familia.",
+   "condiciones": [
+    "Válido: todos los días.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-12-31",
+   "destacada": false
+  },
+  {
+   "slug": "escape-room-laberinto",
+   "nombre": "Escape Room Laberinto",
+   "categoria": "ocio",
+   "categoriaNombre": "Ocio y juegos",
+   "zonas": [
+    "Sur",
+    "Oeste"
+   ],
+   "dias": [
+    "lunes",
+    "martes",
+    "miércoles"
+   ],
+   "diasTexto": "Lunes, martes, miércoles",
+   "tipo": "%",
+   "dto": 30,
+   "etiqueta": "30%",
+   "descripcion": "Salas de escape para grupos de 3 a 6 personas.",
+   "detalle": "30% de descuento en Escape Room Laberinto: lunes, martes, miércoles. Salas de escape para grupos de 3 a 6 personas.",
+   "condiciones": [
+    "Válido: lunes, martes, miércoles.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-03-31",
+   "destacada": false
+  },
+  {
+   "slug": "parque-aventura-copa",
+   "nombre": "Parque Aventura Copa",
+   "categoria": "ocio",
+   "categoriaNombre": "Ocio y juegos",
+   "zonas": [
+    "Costa"
+   ],
+   "dias": [
+    "viernes",
+    "sábado",
+    "domingo"
+   ],
+   "diasTexto": "Viernes, sábado, domingo",
+   "tipo": "%",
+   "dto": 25,
+   "etiqueta": "25%",
+   "descripcion": "Circuitos de tirolesa y puentes colgantes.",
+   "detalle": "25% de descuento en Parque Aventura Copa: viernes, sábado, domingo. Circuitos de tirolesa y puentes colgantes.",
+   "condiciones": [
+    "Válido: viernes, sábado, domingo.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-02-28",
+   "destacada": false
+  },
+  {
+   "slug": "karaoke-eco",
+   "nombre": "Karaoke Eco",
+   "categoria": "ocio",
+   "categoriaNombre": "Ocio y juegos",
+   "zonas": [
+    "Centro",
+    "Sur"
+   ],
+   "dias": [
+    "jueves"
+   ],
+   "diasTexto": "Jueves",
+   "tipo": "2x1",
+   "dto": 50,
+   "etiqueta": "2x1",
+   "descripcion": "Sala privada: la segunda hora va por la casa.",
+   "detalle": "Promoción 2x1 en Karaoke Eco: jueves. Sala privada: la segunda hora va por la casa.",
+   "condiciones": [
+    "Válido: jueves.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-06-30",
+   "destacada": false
+  },
+  {
+   "slug": "taller-ceramica-barro",
+   "nombre": "Taller Cerámica Barro",
+   "categoria": "ocio",
+   "categoriaNombre": "Ocio y juegos",
+   "zonas": [
+    "Oeste",
+    "Norte"
+   ],
+   "dias": [
+    "sábado",
+    "domingo"
+   ],
+   "diasTexto": "Sábado, domingo",
+   "tipo": "%",
+   "dto": 15,
+   "etiqueta": "15%",
+   "descripcion": "Talleres de torno para principiantes.",
+   "detalle": "15% de descuento en Taller Cerámica Barro: sábado, domingo. Talleres de torno para principiantes.",
+   "condiciones": [
+    "Válido: sábado, domingo.",
+    "Mostrá el código de oferta de Chiripa en caja, o ingresalo al finalizar tu compra online.",
+    "No acumulable con otras promociones ni con liquidaciones.",
+    "Sujeto a disponibilidad de stock. Las tiendas son ficticias: este sitio es una demostración."
+   ],
+   "vigencia": "2027-01-31",
+   "destacada": true
+  }
+ ]
+}

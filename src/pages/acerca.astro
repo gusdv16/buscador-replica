@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Base titulo="Acerca de este sitio · Chiripa" descripcion="Chiripa es un ejercicio de réplica de estructura y UX con datos ficticios.">
+  <div class="contenedor" style="max-width:760px;padding-block:32px 56px">
+    <nav class="migas" aria-label="Migas de pan" style="padding-top:0"><a href={base}>Inicio</a> &gt; <span aria-current="page">Acerca</span></nav>
+    <h1 class="titulo-seccion">Acerca de Chiripa</h1>
+    <p>Chiripa es un <strong>proyecto de demostración</strong>. Replica la estructura y la experiencia de un catálogo de ofertas con buscador (filtros, grilla de tarjetas y fichas de detalle) usando contenido propio.</p>
+    <ul>
+      <li>Todas las tiendas, ofertas, zonas y códigos son <strong>ficticios</strong>.</li>
+      <li>No es un sitio bancario ni financiero, no tiene afiliación con ningún banco ni comercio y no pide datos personales ni de pago.</li>
+      <li>La marca, el logotipo, los colores y los textos son originales.</li>
+      <li>El buscador funciona en tu navegador sobre un archivo JSON de datos de ejemplo.</li>
+    </ul>
+    <a class="boton boton-verde" href={`${base}ofertas/`}>Probar el buscador</a>
+  </div>
+</Base>
