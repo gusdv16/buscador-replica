@@ -6,11 +6,30 @@ const base = import.meta.env.BASE_URL;
 const { categorias, zonas, ofertas } = datos;
 const dias = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
 const iconos = { moda: '👗', tecnologia: '🎧', hogar: '🛋️', gastronomia: '🍕', 'salud-belleza': '🌿', deportes: '🚲', libros: '📚', mascotas: '🐾', ocio: '🎲' };
+const slides = ['gastronomia', 'deportes', 'hogar', 'libros', 'ocio'];
 const cuenta = (id) => ofertas.filter((o) => o.categoria === id).length;
 const destacadas = ofertas.filter((o) => o.destacada).slice(0, 8);
 ---
 <Base>
-  <section class="hero">
+  <section class="hero" aria-roledescription="carrusel" aria-label="Ofertas de tiendas">
+    <div class="slides" aria-hidden="true">
+      {slides.map((id, n) => (
+        <div class={`slide${n === 0 ? ' activa' : ''}`}>
+          <img
+            src={`${base}img/h/${id}-1400.webp`}
+            srcset={`${base}img/h/${id}-800.webp 640w, ${base}img/h/${id}-1400.webp 1280w`}
+            sizes="100vw" alt="" width="1400" height="700"
+            loading={n === 0 ? 'eager' : 'lazy'} fetchpriority={n === 0 ? 'high' : 'auto'} decoding="async"
+          />
+        </div>
+      ))}
+    </div>
+    <div class="hero-velo"></div>
+    <div class="slider-ctrl" id="slider-ctrl">
+      <button class="flecha" type="button" id="s-ant" aria-label="Imagen anterior">‹</button>
+      <div class="puntos">{slides.map((_, n) => <button class="punto" type="button" data-n={n} aria-label={`Ir a la imagen ${n + 1}`} aria-current={n === 0 ? 'true' : 'false'}></button>)}</div>
+      <button class="flecha" type="button" id="s-sig" aria-label="Imagen siguiente">›</button>
+    </div>
     <div class="contenedor">
       <span class="hero-etiqueta">Ofertas de tiendas de barrio</span>
       <h1>Las mejores <span class="grande">chiripas</span> cerca tuyo</h1>
@@ -59,7 +78,7 @@ const destacadas = ofertas.filter((o) => o.destacada).slice(0, 8);
       <div class="categorias">
         {categorias.map((c) => (
           <a class={`categoria`} href={`${base}ofertas/?cat=${c.id}`}>
-            <img class="foto" src={`${base}img/${c.id}.webp`} alt="" width="560" height="368" loading="lazy" decoding="async" />
+            <img class="foto" src={`${base}img/c/${c.id}-0.webp`} alt="" width="400" height="270" loading="lazy" decoding="async" />
             {c.nombre}
             <small>{cuenta(c.id)} ofertas</small>
           </a>
@@ -95,3 +114,20 @@ const destacadas = ofertas.filter((o) => o.destacada).slice(0, 8);
     </div>
   </section>
 </Base>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const puntos = Array.from(document.querySelectorAll('.punto'));
+  let actual = 0, timer;
+  const ir = (n) => {
+    actual = (n + slides.length) % slides.length;
+    slides.forEach((s, i) => s.classList.toggle('activa', i === actual));
+    puntos.forEach((p, i) => p.setAttribute('aria-current', i === actual));
+  };
+  const auto = () => { clearInterval(timer); if (!matchMedia('(prefers-reduced-motion: reduce)').matches) timer = setInterval(() => ir(actual + 1), 5500); };
+  document.getElementById('s-ant').addEventListener('click', () => { ir(actual - 1); auto(); });
+  document.getElementById('s-sig').addEventListener('click', () => { ir(actual + 1); auto(); });
+  puntos.forEach((p) => p.addEventListener('click', () => { ir(+p.dataset.n); auto(); }));
+  document.getElementById('slider-ctrl').addEventListener('focusin', () => clearInterval(timer));
+  auto();
+</script>

@@ -4,13 +4,13 @@
   "perfil": "móvil (por defecto de Lighthouse)",
   "resultados": {
     "inicio": {
-      "rendimiento": 100,
+      "rendimiento": 96,
       "accesibilidad": 100,
       "buenasPracticas": 100,
       "seo": 100,
-      "fcp": 1082,
-      "lcp": 1082,
-      "tbt": 0,
+      "fcp": 1092,
+      "lcp": 2656,
+      "tbt": 1,
       "cls": 0
     },
     "listado": {
@@ -18,8 +18,8 @@
       "accesibilidad": 100,
       "buenasPracticas": 100,
       "seo": 100,
-      "fcp": 1210,
-      "lcp": 1210,
+      "fcp": 1216,
+      "lcp": 1216,
       "tbt": 13,
       "cls": 0
     },
@@ -28,9 +28,9 @@
       "accesibilidad": 100,
       "buenasPracticas": 100,
       "seo": 100,
-      "fcp": 1219,
-      "lcp": 1219,
-      "tbt": 48,
+      "fcp": 1238,
+      "lcp": 1238,
+      "tbt": 9,
       "cls": 0
     },
     "detalle": {
@@ -38,9 +38,9 @@
       "accesibilidad": 100,
       "buenasPracticas": 100,
       "seo": 100,
-      "fcp": 967,
-      "lcp": 1064,
-      "tbt": 90,
+      "fcp": 982,
+      "lcp": 1522,
+      "tbt": 2,
       "cls": 0
     }
   }
