@@ -59,7 +59,7 @@ const destacadas = ofertas.filter((o) => o.destacada).slice(0, 8);
       <div class="categorias">
         {categorias.map((c) => (
           <a class={`categoria`} href={`${base}ofertas/?cat=${c.id}`}>
-            <span class={`icono t-${c.id}`} aria-hidden="true">{iconos[c.id]}</span>
+            <img class="foto" src={`${base}img/${c.id}.webp`} alt="" width="560" height="368" loading="lazy" decoding="async" />
             {c.nombre}
             <small>{cuenta(c.id)} ofertas</small>
           </a>

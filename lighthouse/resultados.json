@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-16",
+  "fecha": "2026-11-17",
   "corridas": 3,
   "perfil": "móvil (por defecto de Lighthouse)",
   "resultados": {
@@ -8,9 +8,9 @@
       "accesibilidad": 100,
       "buenasPracticas": 100,
       "seo": 100,
-      "fcp": 1162,
-      "lcp": 1162,
-      "tbt": 15,
+      "fcp": 1082,
+      "lcp": 1082,
+      "tbt": 0,
       "cls": 0
     },
     "listado": {
@@ -18,19 +18,19 @@
       "accesibilidad": 100,
       "buenasPracticas": 100,
       "seo": 100,
-      "fcp": 1271,
-      "lcp": 1271,
-      "tbt": 1,
+      "fcp": 1210,
+      "lcp": 1210,
+      "tbt": 13,
       "cls": 0
     },
     "listado-filtrado": {
-      "rendimiento": 98,
+      "rendimiento": 100,
       "accesibilidad": 100,
       "buenasPracticas": 100,
       "seo": 100,
-      "fcp": 1232,
-      "lcp": 1232,
-      "tbt": 175,
+      "fcp": 1219,
+      "lcp": 1219,
+      "tbt": 48,
       "cls": 0
     },
     "detalle": {
@@ -38,9 +38,9 @@
       "accesibilidad": 100,
       "buenasPracticas": 100,
       "seo": 100,
-      "fcp": 1017,
-      "lcp": 1017,
-      "tbt": 6,
+      "fcp": 967,
+      "lcp": 1064,
+      "tbt": 90,
       "cls": 0
     }
   }

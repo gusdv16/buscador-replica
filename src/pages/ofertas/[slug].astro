@@ -17,7 +17,7 @@ const relacionadas = [
 ].slice(0, 4);
 ---
 <Base titulo={`${o.nombre} · ${o.etiqueta} · Chiripa`} descripcion={o.detalle}>
-  <div class="hero-detalle" aria-hidden="true"></div>
+  <div class="hero-detalle" aria-hidden="true"><img src={`${base}img/${o.categoria}.webp`} alt="" width="560" height="368" fetchpriority="high" decoding="async" /></div>
   <div class="contenedor">
     <nav class="migas" aria-label="Migas de pan"><a href={base}>Inicio</a> &gt; <a href={`${base}ofertas/`}>Ofertas</a> &gt; <span aria-current="page">{o.nombre}</span></nav>
     <div class="ficha">
